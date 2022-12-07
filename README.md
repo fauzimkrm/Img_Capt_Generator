@@ -9,3 +9,7 @@ python -m venv [env_name]
 ```
 pip install -r requirements.txt
 ```
+- run command
+```
+python img_capt.py [image_path]
+```
