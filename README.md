@@ -19,4 +19,9 @@ python img_capt.py [image_path]
 ```
 flask run
 ```
+- example image
 
+![image](bear.jpg)
+- upload image to api
+
+![postman](upload.JPG)
