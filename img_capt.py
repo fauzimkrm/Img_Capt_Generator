@@ -3,6 +3,7 @@ import numpy as np
 import sys
 
 from PIL import Image
+from googletrans import Translator
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.applications.xception import Xception, preprocess_input
 from tensorflow.keras.models import Model, load_model
@@ -78,8 +79,9 @@ max_length = max_length(dataset)
 model = load_model('model_5.h5')
 xception_model = Xception(include_top=False, pooling="avg")
 
+translator = Translator()
 photo = extract_features(img_path, xception_model)
 img = Image.open(img_path)
 description = generate_desc(model, tokenizer, photo, max_length)
-print("\n\n")
-print(description)
+description = translator.translate(description[6:-4], dest='id')
+print(description.text)
