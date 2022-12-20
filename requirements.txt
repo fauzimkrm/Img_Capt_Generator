@@ -1,7 +1,9 @@
 matplotlib>=3.2.2
 numpy>=1.18.5
 tqdm>=4.64.0
-scikit-learn<=1.1.2  # CoreML quantization
+scikit-learn<=1.1.2
 tensorflow>=2.4.1
 Pillow>=9.3.0
 pycocotools>=2.0.6
+Flask>=2.2.2
+googletrans==4.0.0rc1
