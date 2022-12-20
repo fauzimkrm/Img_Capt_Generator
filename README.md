@@ -1,4 +1,4 @@
-# Img_Capt_Generator
+# Image Caption Generator
 
 - Download [Caption and Instances Files](https://drive.google.com/drive/folders/1ZqGpIW4DL1Rg_-MMA5lKvvtBJgppies6?usp=sharing)
 - Make virtual env 
@@ -13,3 +13,10 @@ pip install -r requirements.txt
 ```
 python img_capt.py [image_path]
 ```
+
+# Flask API
+- go to the root folder and run API
+```
+flask run
+```
+
